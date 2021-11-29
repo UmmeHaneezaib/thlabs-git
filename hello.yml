@@ -1,0 +1,25 @@
+---
+
+- name: create at new file and delete it.
+
+  hosts: all
+
+  tasks:
+
+    - name: create username file in tmp directory
+
+      file:
+
+        path: '/tmp/han.txt'
+
+        state: touch
+
+
+
+# touch hello.yml
+
+# gedit or vi hello.yml
+
+# :wq
+
+# ansible-playbook hello.yml
