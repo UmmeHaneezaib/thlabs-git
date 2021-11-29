@@ -1,0 +1,19 @@
+# which apache2
+
+- name: install httpd packages 
+
+  hosts: all
+
+  become: yes # root user going to excute
+
+
+
+  tasks:
+
+    - name: Install httpd apache
+      
+      apt:
+
+        name: apache2
+
+        state: present
